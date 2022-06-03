@@ -22,35 +22,53 @@
   </head>
   <body>
     <!-- основная навигация сайта -->
-    <header class="header-nav">
+    <header class="header">
       <div class="my-nav container">
         <nav class="my-nav">
-          <a href="index.html" class="logo" lang="en">
-            Web<span class="logo-accent">Studio</span></a
+          <a href="index.html" class="my-nav__logo logo" lang="en">
+            Web<span class="my-nav__logo--accent">Studio</span></a
           >
           <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="current link">Студия</a>
+            <li class="site-nav__item">
+              <a
+                href="./index.html"
+                class="site-nav__item--link link site-nav__item--current"
+                >Студия</a
+              >
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__item--link link"
+                >Портфолио</a
+              >
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__item--link link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              ><svg class="auth-nav-envelope">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+          <li class="auth-nav__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="auth-nav__item--link link"
+              ><svg class="auth-nav__envelope">
+                <use
+                  href="./images/symbol-defs.svg#icon-envelope"
+                  width="16"
+                  height="12"
+                ></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="auth-nav-tel">
-                <use href="./images/symbol-defs.svg#icon-tel"></use>
+          <li class="auth-nav__item">
+            <a href="tel:+380961111111" class="auth-nav__item--link link">
+              <svg class="auth-nav__tel">
+                <use
+                  href="./images/symbol-defs.svg#icon-tel"
+                  width="10"
+                  height="16"
+                ></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -63,8 +81,8 @@
       <!-- герой -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="button-hero">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button data-modal-open type="button" class="hero__button">
             Заказать услугу
           </button>
         </div>
@@ -79,8 +97,8 @@
                 <svg class="antena-style">
                   <use
                     href="./images/symbol-defs.svg#icon-antenna"
-                    width="70px"
-                    height="70px"
+                    width="70"
+                    height="70"
                   ></use>
                 </svg>
               </div>
@@ -95,8 +113,8 @@
                 <svg class="antena-style">
                   <use
                     href="./images/symbol-defs.svg#icon-clock"
-                    width="70px"
-                    height="70px"
+                    width="70"
+                    height="70"
                   ></use>
                 </svg>
               </div>
@@ -111,8 +129,8 @@
                 <svg class="antena-style">
                   <use
                     href="./images/symbol-defs.svg#icon-diagram"
-                    width="70px"
-                    height="70px"
+                    width="70"
+                    height="70"
                   ></use>
                 </svg>
               </div>
@@ -127,8 +145,8 @@
                 <svg class="antena-style">
                   <use
                     href="./images/symbol-defs.svg#icon-astronaut"
-                    width="70px"
-                    height="70px"
+                    width="70"
+                    height="70"
                   ></use>
                 </svg>
               </div>
@@ -213,10 +231,9 @@
                     aria-label="twitter"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -227,10 +244,9 @@
                     aria-label="facebook"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -241,10 +257,9 @@
                     aria-label="linkedin"
                   >
                     <svg class="social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -267,10 +282,9 @@
                     aria-label="instagram"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-instagram"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -281,10 +295,9 @@
                     aria-label="twitter"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -295,10 +308,9 @@
                     aria-label="facebook"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -309,10 +321,9 @@
                     aria-label="linkedin"
                   >
                     <svg class="social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -335,10 +346,9 @@
                     aria-label="instagram"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-instagram"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -349,10 +359,9 @@
                     aria-label="twitter"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -363,10 +372,9 @@
                     aria-label="facebook"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -377,10 +385,9 @@
                     aria-label="linkedin"
                   >
                     <svg class="social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -403,10 +410,9 @@
                     aria-label="instagram"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-instagram"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -417,10 +423,9 @@
                     aria-label="twitter"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-twitter"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -431,10 +436,9 @@
                     aria-label="facebook"
                   >
                     <svg class="social-icon" width="20" height="20">
-                      <use
-                        href="./images/symbol-defs.svg#icon-facebook"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -445,10 +449,9 @@
                     aria-label="linkedin"
                   >
                     <svg class="social-icon" width="20px" height="20px">
-                      <use
-                        href="./images/symbol-defs.svg#icon-linkedin"
-                      ></use></svg
-                  ></a>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -463,22 +466,23 @@
             <li class="customers-box">
               <a class="customers-link" href="">
                 <svg class="custors-logo" width="106" height="60">
-                  <use href="./images/symbol-defs.svg#icon-union"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-union"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-box">
               <a class="customers-link" href=""
                 ><svg class="custors-logo" width="106" height="60">
-                  <use
-                    href="./images/symbol-defs.svg#icon-tagline-heare"
-                  ></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-tagline-heare"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-box">
               <a class="customers-link" href=""
                 ><svg class="custors-logo" width="106" height="60">
-                  <use href="./images/symbol-defs.svg#icon-group"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-group"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-box">
               <a class="customers-link" href=""
@@ -490,14 +494,16 @@
             <li class="customers-box">
               <a class="customers-link" href=""
                 ><svg class="custors-logo" width="106" height="60">
-                  <use href="./images/symbol-defs.svg#icon-brand"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-brand"></use>
+                </svg>
+              </a>
             </li>
             <li class="customers-box">
               <a class="customers-link" href=""
                 ><svg class="custors-logo" width="106" height="60">
-                  <use href="./images/symbol-defs.svg#icon-tagline"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-tagline"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -538,10 +544,9 @@
                 aria-label="instagram"
               >
                 <svg class="social-icon" width="20" height="20">
-                  <use
-                    href="./images/symbol-defs.svg#icon-instagram"
-                  ></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a
@@ -666,7 +671,6 @@
               <a class="contract-accent" href="">Условия договора</a></span
             >
           </label>
-
           <button class="form-button" type="submit">Отправить</button>
         </form>
       </div>
